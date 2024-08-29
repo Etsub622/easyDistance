@@ -13,12 +13,14 @@ export default {
       fontSize: {
         '48': '48px',
         '28': '20px',
-        '36':'36px'
+        '30':'24px',
+        '36': '36px',
+        
       },
     extend: {
       
  colors: {
-        customColor: ['#43C5A4' ,'#515B6F','#12C698'],
+        customColor: ['#43C5A4' ,'#515B6F','#12C698','#6FC2AD'],
       },
     },
   },
