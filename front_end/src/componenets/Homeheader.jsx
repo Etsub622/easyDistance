@@ -5,7 +5,7 @@ import logo from "../assets/easyDlogo.png"
 
 const Header = () => {
     return (
-        <div className="bg-slate-50 rounded-2xl " >
+        <div className="bg-white shadow-lg rounded-2xl " >
             <div className="flex justify-between mr-32">
                 <div className="flex">
                     <img src={logo} alt="logo" className="w-16" />
