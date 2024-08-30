@@ -8,8 +8,7 @@ import Home from './componenets/Home.jsx';
 import About from './componenets/About.jsx';
 import College from './componenets/College.jsx';
 import Contact from './componenets/Contact.jsx';
-import Uniheader from './componenets/university/Header.jsx';
-import Footer from './componenets/Footer.jsx';
+import Landingpage from './componenets/university/landingpage.jsx';
 function App() {
 
   return (
@@ -17,13 +16,13 @@ function App() {
     <>
        
       <Router>
-        <Header/>
-        <Home />
-        <Footer/>
-        {/* <Uniheader/> */}
+        
+        {/* <Home /> */}
+       
+        {/* <Landingpage/> */}
         <Routes>
-          {/* <Route path="/" element={ <Login/>} /> */}
-          {/* <Route path="/signup" element={<Signup/>} /> */}
+          <Route path="/" element={ <Login/>} />
+          <Route path="/signup" element={<Signup/>} />
           <Route path="/home" element={<Home/> } />
           <Route path ="/college" element ={<College/>}/>
           <Route path ="/contact" element ={<Contact/>}/>

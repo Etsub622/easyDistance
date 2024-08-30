@@ -1,8 +1,11 @@
 import GraduateGirl from "../../assets/GraduateGirl.png"
 import Groupchat from "../../assets/Grouptalk.png"
+import  Uniheader from"./Header.jsx"
 
 const Landingpage = () => {
     return (
+        <>
+             <Uniheader/>
         <div>
             <div >
                 <div className=" flex gap-32 m-14">
@@ -29,7 +32,8 @@ const Landingpage = () => {
                         <img src={Groupchat} alt="groupchat" className="h-96" />
                     </div>
             </div>
-        </div>
+            </div>
+            </>
     )
 }
 export default Landingpage;

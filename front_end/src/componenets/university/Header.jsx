@@ -1,7 +1,7 @@
 import unityLogo from "../../assets/unityLogo.png"
 import { IoPersonSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import Landingpage from "./landingpage";
+
 
 
 const Uniheader = () => {
@@ -28,7 +28,7 @@ const Uniheader = () => {
             </div>
         </div>
             </div>
-            <Landingpage/>
+            
             </>
     )
 }
