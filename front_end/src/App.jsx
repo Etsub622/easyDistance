@@ -12,8 +12,8 @@ import Uniheader from './componenets/university/Header.jsx';
 import Footer from './componenets/Footer.jsx';
 function App() {
 
-
   return (
+
     <>
        
       <Router>
