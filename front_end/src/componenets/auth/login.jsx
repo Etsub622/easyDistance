@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MdVisibility, MdVisibilityOff } from 'react-icons/md';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import irregular from "../../assets/irregular.png"
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -13,13 +14,16 @@ const Login = () => {
 
     return (
         <div>
-            <div className="">
-                <div></div>
+            <div className=" flex">
+                <div>
+                    <img src={irregular} alt="irregularshape" className="h-lvh" />
+                </div>
+                <div>
                 <div className="flex justify-center mt-40">
                     <p className="font-poppins text-48 font-black">Welcome Back,</p>
                 </div>
             
-                <div className="flex flex-col  ml-96 mt-10">
+                <div className="flex flex-col  ml-48 mt-10">
                     <div> 
                         <label className="block font-epilogue font-semibold  mb-3">Email Address</label>
                         <input
@@ -52,13 +56,15 @@ const Login = () => {
                     <div className="flex mt-3">
                         <p className="text-gray-500">Don't have an account?</p>
                         <Link to="/signup" className="text-customColor-0">Sign Up</Link>
-                    </div> 
+                        </div> 
+                        
                 </div>
-                <div className="flex justify-center mt-5"> 
-                    <button className="bg-customColor w-32 p-1 rounded-lg text-white font-langar text-28">
+                <div className=" ml-80 m-9"> 
+                    <button className="bg-customColor-0  w-32 p-1 rounded-lg text-white font-langar text-28">
                         Login 
                     </button>
-                </div>
+                    </div>
+                    </div>
             </div>
         </div>
     );
