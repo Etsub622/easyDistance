@@ -9,6 +9,7 @@ import About from './componenets/About.jsx';
 import College from './componenets/College.jsx';
 import Contact from './componenets/Contact.jsx';
 import Uniheader from './componenets/university/Header.jsx';
+import Footer from './componenets/Footer.jsx';
 function App() {
 
 
@@ -16,9 +17,10 @@ function App() {
     <>
        
       <Router>
-        {/* <Header/> */}
-        {/* <Home/> */}
-        <Uniheader/>
+        <Header/>
+        <Home />
+        <Footer/>
+        {/* <Uniheader/> */}
         <Routes>
           {/* <Route path="/" element={ <Login/>} /> */}
           {/* <Route path="/signup" element={<Signup/>} /> */}
