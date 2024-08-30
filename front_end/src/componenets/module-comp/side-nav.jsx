@@ -4,7 +4,7 @@ import sidenavdata from "./sidenav-data";
 const SideNav = () => {
   return (
     <div >
-      <div className="w-[20%] h-[95vh]  fixed shadow-xl pt-10 pb-10  flex flex-col justify-between">
+      <div className="w-[20%] h-[90vh]  fixed shadow-xl pt-10 pb-10  flex flex-col justify-between">
         <div className="flex flex-col gap-8 pl-10 text-left">
             {sidenavdata.map((d) => (
             <div className=" flex gap-4">

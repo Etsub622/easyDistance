@@ -5,7 +5,7 @@ import SideNav from "./side-nav";
 const HeadNav = () => {
   return (
 
-      <nav className="flex fixed justify-between shadow-md h-[10%] w-full px-3 py-0.5 ">
+      <nav className="flex fixed justify-between shadow-md h-[8%] w-full px-3 py-0.5 ">
         
         <div className="flex w-max justify-center items-center gap-2">
           <img className="h-full w-fit" src="./images/unity-logo.png"/>
