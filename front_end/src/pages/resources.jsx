@@ -1,6 +1,6 @@
 import React from 'react';
-import SideNav from '../componenets/module-comp/side-nav';
-import HeadNav from '../componenets/module-comp/head-nav';
+import SideNav from '../componenets/common_com/side-nav';
+import HeadNav from '../componenets/common_com/head-nav';
 import ResBox from '../componenets/resources-comp/res-box';
 import ResData from '../componenets/resources-comp/res-data';
 
@@ -8,7 +8,6 @@ const Resources = () => {
   return (
     <div className='h-screen flex flex-col'>
       <div className='h-[10%]'>
-        <HeadNav />
       </div>
       <div className='h-[90%] w-screen flex'>
         <div className='w-[20%] h-full'>

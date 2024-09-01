@@ -1,6 +1,6 @@
 import React from 'react'
-import SideNav from '../componenets/module-comp/side-nav'
-import HeadNav from '../componenets/module-comp/head-nav'
+import SideNav from '../componenets/common_com/side-nav'
+import Header from '../componenets/common_com/head-nav'
 import DepCards from '../componenets/module-comp/dep-cards'
 import DepData from '../componenets/module-comp/department-data'
 
@@ -8,7 +8,7 @@ const Module = () => {
   return (
     <div className=' h-screen flex flex-col'>
         <div className=' h-[10%]'>
-        <HeadNav  />
+        <Header  />
         </div>
         <div className=' h-[90%] w-screen flex '>
           <div className=' w-[20%] h-full'>

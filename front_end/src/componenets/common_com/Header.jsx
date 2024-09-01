@@ -1,7 +1,6 @@
 import unityLogo from "../../assets/unityLogo.png"
 import { IoPersonSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import Landingpage from "./landingpage";
 
 
 const Uniheader = () => {
@@ -16,9 +15,9 @@ const Uniheader = () => {
                 </div>
                 <div className=" flex justify-between gap-7 font-langar text-customColor1-0 m-2">
                     <Link to ="/home"> Home</Link>
-                    <Link to ="/college"> Modules </Link>
-                    <Link to ="/contact"> Worksheets</Link>
-                    <Link to ="/about"> Exams</Link>
+                    <Link to ="/module"> Modules </Link>
+                    <Link to ="/resources"> Worksheets</Link>
+                    <Link to ="/resources"> Exams</Link>
                     <Link to ="/about"> Announcements</Link>
                     <div className=" flex justify-between gap-8" >
                             <Link className="bg-customColor-0 text-white h-7  w-16 rounded-lg flex justify-center ml-6" to="/logout"> Logout </Link>
@@ -28,7 +27,6 @@ const Uniheader = () => {
             </div>
         </div>
             </div>
-            <Landingpage/>
             </>
     )
 }
