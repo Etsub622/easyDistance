@@ -1,4 +1,4 @@
-import Header from "./Homeheader";
+import Header from "../componenets/common_com/Homeheader";
 import lamp from "../assets/lamp.png"
 import { FaArrowRightLong } from "react-icons/fa6";
 import card1 from "../assets/card1.png"

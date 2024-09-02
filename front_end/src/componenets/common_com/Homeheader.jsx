@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/easyDlogo.png"
+import logo from "../../assets/easyDlogo.png"
 
 
 
