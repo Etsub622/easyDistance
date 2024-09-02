@@ -111,7 +111,7 @@ const Signup = () => {
                     </div>
                       <div className="flex gap-2 mt-3">
                         <p className="text-gray-500">Already have an account?</p>
-                        <Link to="/" className="text-customColor-0">Login</Link>
+                        <Link to="/login" className="text-customColor-0">Login</Link>
                     </div>
                     
 

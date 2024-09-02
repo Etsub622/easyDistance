@@ -21,9 +21,9 @@ function App() {
        
         {/* <Landingpage/> */}
         <Routes>
-          <Route path="/" element={ <Login/>} />
+          <Route path="/Login" element={ <Login/>} />
           <Route path="/signup" element={<Signup/>} />
-          <Route path="/home" element={<Home/> } />
+          <Route path="/" element={<Home/> } />
           <Route path ="/college" element ={<College/>}/>
           <Route path ="/contact" element ={<Contact/>}/>
           <Route path ="/about" element ={<About/>}/>
