@@ -12,12 +12,12 @@ const Header = () => {
                     <p className="text-customColor-0 font-langar text-30 "> Easy Distance</p>
                 </div>
                 <div className=" flex justify-between gap-5 font-langar m-2">
-                    <Link to ="/home"> Home</Link>
+                    <Link to ="/"> Home</Link>
                     <Link to ="/college"> Collages </Link>
                     <Link to ="/contact"> Contact Us</Link>
                     <Link to ="/about"> About Us</Link>
                     <div className="bg-customColor-3 text-white h-7  w-16 rounded-lg flex justify-center ml-6">
-                        <Link to="/"> Log in </Link>
+                        <Link to="/login"> Log in </Link>
                     </div>
                 </div>
             </div>

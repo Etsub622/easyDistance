@@ -17,4 +17,4 @@ const DepCards = ({index , title, detail , year }) => {
   )
 }
 
-export default DepCards
+export default DepCards;

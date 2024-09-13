@@ -14,7 +14,7 @@ const Uniheader = () => {
                     <p className="text-customColor1-0 font-langar text-30 "> Unity University</p>
                 </div>
                 <div className=" flex justify-between gap-7 font-langar text-customColor1-0 m-2">
-                    <Link to ="/home"> Home</Link>
+                    <Link to ="/"> Home</Link>
                     <Link to ="/module"> Modules </Link>
                     <Link to ="/resources"> Worksheets</Link>
                     <Link to ="/resources"> Exams</Link>

@@ -1,6 +1,7 @@
 import GraduateGirl from "../../assets/GraduateGirl.png"
 import Groupchat from "../../assets/Grouptalk.png"
-import  Uniheader from"./Header.jsx"
+import Uniheader from "../common_com/Header.jsx"
+ 
 
 const Landingpage = () => {
     return (
