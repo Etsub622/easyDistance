@@ -6,6 +6,7 @@ import { GroupModule } from './group/group.module';
 import { MessageModule } from './message/message.module';
 import { MediaModule } from './media/media.module';
 import { AnnouncementModule } from './announcement/announcement.module';
+import { MaterialModule } from './material/material.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -17,7 +18,8 @@ import { AnnouncementModule } from './announcement/announcement.module';
     GroupModule,
     MessageModule,
     MediaModule,
-    AnnouncementModule],
+    AnnouncementModule,
+    MaterialModule],
     
   controllers: [],
   providers: [],

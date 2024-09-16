@@ -34,3 +34,4 @@ export class AnnouncementController {
         return this.announcementService.deleteAnnouncement(id);
     }
 }
+    

@@ -18,9 +18,8 @@ export class AnnouncementService {
     }
 
     async getAnnouncementById(id:string):Promise<Announcement>{
-        return this.announcementModel.findById(id).exec();
+        return await this.announcementModel.findById(id).exec();
     }
-
 
 
     async createAnnouncement(announcementDto:AnnouncementDto):Promise<Announcement>{
@@ -32,7 +31,6 @@ export class AnnouncementService {
             throw new InternalServerErrorException(e);
         }         
 }
-
 
 async updateAnnouncement(id:string,announcementDto:UpdateAnnouncementDto):Promise<Announcement>{
     return await this.announcementModel.findByIdAndUpdate(id,announcementDto,{new:true,runValidators:true}).exec();
