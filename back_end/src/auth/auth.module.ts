@@ -24,6 +24,8 @@ JwtModule.registerAsync({
     MongooseModule.forFeature([{name:User.name,schema:UserSchema}])
   ],
   providers: [AuthService],
-  controllers: [AuthController]
+  controllers: [AuthController],
+  exports: [MongooseModule],
+  
 })
 export class AuthModule {}
