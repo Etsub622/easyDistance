@@ -17,6 +17,30 @@ const Signup = () => {
         setShowpassword(!showPassword)
     }
 
+    const handleSignup = async () => {
+        if (password !== confirmedpassword) {
+            setError("Passwords do not match.");
+            return;
+        }
+
+        try {
+            const response = await axios.post('http://localhost:3001/auth/signup', {
+                FirstName: firstname,
+                lastName: lastname,
+                College: collegename,
+                Email: email,
+                Password: password,
+            });
+
+            console.log("Signup successful:", response.data);
+            navigate('/login'); 
+        } catch (error) {
+
+            setError("Signup failed. Please try again.");
+            console.error("Signup error:", error);
+        }
+    };
+
     return (
         <div className=" flex flex-col justify-end items-center m-9">
             <div>
@@ -105,7 +129,8 @@ const Signup = () => {
                             </div>
                     </div>
                         <div className="flex justify-center mt-5"> 
-                    <button className="bg-customColor-0 w-96 p-2 pl-2 border  rounded-lg text-white text-28">
+                        <button className="bg-customColor-0 w-96 p-2 pl-2 border  rounded-lg text-white text-28"
+                        onClick={handleSignup}>
                         Continue
                     </button>
                     </div>

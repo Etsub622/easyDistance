@@ -11,6 +11,25 @@ const Login = () => {
     const togglevisibility = () => {
         setShowpassword(!showPassword)
     }
+    const handleLogin = async () => {
+        try {
+            const response = await axios.post('http://localhost:3001/auth/login', {
+                Email: email,
+                Password: password,
+            });
+
+            const { token } = response.data;
+
+            localStorage.setItem('token', token);
+
+          
+            navigate('/');
+        } catch (error) {
+          
+            setError("Invalid credentials, please try again.");
+            console.error("Login error:", error);
+        }
+    };
 
     return (
         <div>
@@ -60,7 +79,8 @@ const Login = () => {
                         
                 </div>
                 <div className=" ml-80 m-9"> 
-                    <button className="bg-customColor-0  w-32 p-1 rounded-lg text-white font-langar text-28">
+                        <button className="bg-customColor-0  w-32 p-1 rounded-lg text-white font-langar text-28"
+                        onClick={handleLogin}>
                         Login 
                     </button>
                     </div>
