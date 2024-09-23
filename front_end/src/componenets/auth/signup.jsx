@@ -3,32 +3,38 @@ import { MdVisibility, MdVisibilityOff } from 'react-icons/md';
 import { Link } from "react-router-dom";
 import pic from "../../assets/search.png"
 import hat from "../../assets/graduate.png"
-
+import axios from "axios"
+import { useNavigate } from "react-router-dom";
 const Signup = () => {
     // const [email, setEmail] = useState("");
+    const navigate = useNavigate()
     const [firstname, setFirstname] = useState("");
     const [lastname, setLastname] = useState("")
+    const[email,setEmail]=useState("")
     const [collegename,setCollegname]=useState("")
     const [password, setPassword] = useState("");
     const[confirmedpassword,setConfirmedPassword]=useState()
     const [showPassword, setShowpassword] = useState(false)
-    
+    const [errorMessage, setErrorMessage] = useState("");
+
     const togglevisibility = () => {
         setShowpassword(!showPassword)
     }
 
     const handleSignup = async () => {
         if (password !== confirmedpassword) {
-            setError("Passwords do not match.");
+            setErrorMessage("Passwords do not match.");
             return;
+          
+           
         }
 
         try {
             const response = await axios.post('http://localhost:3001/auth/signup', {
                 FirstName: firstname,
                 lastName: lastname,
+                Email:email,
                 College: collegename,
-                Email: email,
                 Password: password,
             });
 
@@ -36,7 +42,7 @@ const Signup = () => {
             navigate('/login'); 
         } catch (error) {
 
-            setError("Signup failed. Please try again.");
+         
             console.error("Signup error:", error);
         }
     };
@@ -78,6 +84,16 @@ const Signup = () => {
                             placeholder="Enter your last name"
                             value={lastname}
                             onChange={(e) => setLastname(e.target.value)}
+                        />
+                    </div>
+                    <div> 
+                        <label className="block font-epilogue  text-customColor-1 font-medium">Email Address</label>
+                        <input
+                            className=" w-96 p-2 pl-2 border rounded-lg focus:outline-none focus:border-gray-500"
+                            type="text"
+                            placeholder="Enter email address"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
                       <div> 
@@ -126,7 +142,13 @@ const Signup = () => {
             >
                                  {showPassword ? <MdVisibility /> : <MdVisibilityOff />}
                             </button>
-                            </div>
+                        </div>
+                        <div>
+                            {errorMessage && (
+                                   <p className="text-red-500 font-bold mb-3">{errorMessage}</p>
+                            )}
+                        </div>
+                        
                     </div>
                         <div className="flex justify-center mt-5"> 
                         <button className="bg-customColor-0 w-96 p-2 pl-2 border  rounded-lg text-white text-28"
