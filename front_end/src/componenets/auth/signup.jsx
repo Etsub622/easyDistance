@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { MdVisibility, MdVisibilityOff } from 'react-icons/md';
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 import pic from "../../assets/search.png"
 import hat from "../../assets/graduate.png"
 import axios from "axios"
-import { useNavigate } from "react-router-dom";
+
 const Signup = () => {
     // const [email, setEmail] = useState("");
     const navigate = useNavigate()
@@ -32,7 +32,7 @@ const Signup = () => {
         try {
             const response = await axios.post('http://localhost:3001/auth/signup', {
                 FirstName: firstname,
-                lastName: lastname,
+                LastName: lastname,
                 Email:email,
                 College: collegename,
                 Password: password,

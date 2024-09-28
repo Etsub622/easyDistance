@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { MdVisibility, MdVisibilityOff } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import irregular from "../../assets/irregular.png"
+import axios from "axios";
 
 const Login = () => {
+    const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [showPassword, setShowpassword] = useState(false)
@@ -21,13 +23,12 @@ const Login = () => {
             const { token } = response.data;
 
             localStorage.setItem('token', token);
-
-          
-            navigate('/');
+            if (token) {
+                 navigate('/');
+            }
+           
         } catch (error) {
-          
-            setError("Invalid credentials, please try again.");
-            console.error("Login error:", error);
+            console.log("Login error:", error);
         }
     };
 
