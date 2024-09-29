@@ -3,6 +3,7 @@ import { MdVisibility, MdVisibilityOff } from 'react-icons/md';
 import { Link, useNavigate } from 'react-router-dom';
 import irregular from "../../assets/irregular.png"
 import axios from "axios";
+import { base_url } from "../../services/apiEnd";
 
 const Login = () => {
     const navigate = useNavigate();
@@ -15,7 +16,7 @@ const Login = () => {
     }
     const handleLogin = async () => {
         try {
-            const response = await axios.post('http://localhost:3001/auth/login', {
+            const response = await axios.post(`${base_url}/login`, {
                 Email: email,
                 Password: password,
             });
