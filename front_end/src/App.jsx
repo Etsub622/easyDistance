@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './index.css'
 import Login from './componenets/auth/login.jsx'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -10,8 +9,8 @@ import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx';
 import Module from './pages/module.jsx'
 import Landingpage from './componenets/university/landingpage.jsx';
-import DepCards from './componenets/module-comp/dep-cards.jsx';
-import ResBox from './componenets/resources-comp/res-box.jsx';
+// import DepCards from './componenets/module-comp/dep-cards.jsx';
+// import ResBox from './componenets/resources-comp/res-box.jsx';
 
 function App() {
 
