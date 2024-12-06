@@ -15,25 +15,16 @@ import Landingpage from './componenets/university/landingpage.jsx';
 function App() {
 
   return (
-
-    <>
-       
+    <>  
       <Router>
-        
-        {/* <Home /> */}
-       
-        {/* <Landingpage/> */}
-        {/* <DepCards/> */}
-        {/* <ResBox/> */}
         <Routes>
           <Route path="/Login" element={ <Login/>} />
           <Route path="/signup" element={<Signup/>} />
           <Route path="/" element={<Home/> } />
-          <Route path ="/college" element ={<Landingpage/>}/>
+          <Route path ="/Colleges" element ={<Landingpage/>}/>
           <Route path ="/contact" element ={<Contact/>}/>
           <Route path ="/about" element ={<About/>}/>
           <Route path = "/module" element = {<Module />} />
-          {/* <Route path='/resources' element = {<Resources />} /> */}
         </Routes>
       </Router>
      

@@ -7,19 +7,20 @@ import card3 from "../assets/card3.png";
 import Footer from "./Footer";
 
 const Home = () => {
+
   return (
     <>
-      <Header />
+      <Header RouteHome =  {true} />
       <div>
-        <div>
+        <div className="font-poppins">
           <div className="flex justify-between">
             <div className="mx-16 my-24 w-[50%]">
-              <h1 className="font-poppins text-[36px] font-semibold mb-4  ">
+              <h1 className=" text-[36px] font-semibold mb-4  ">
                 Empower Your{" "}
                 <strong className="text-[#098b6b] font-medium">Future</strong>{" "}
                 with Flexible and Accessible Distance Learning
               </h1>
-              <p className="font-Garamond text-[20px]  ">
+              <p className=" text-[20px]  ">
                 Unlock your potential with our flexible online
                 <br />
                 courses. Join our community and start learning
@@ -27,7 +28,7 @@ const Home = () => {
                 today.
               </p>
               <div className="">
-                <button className=" hover:bg-customColor1-0 font-Garamond bg-customColor-2 font-semibold text-white text-[17px] mt-3 px-2 py-[10px] flex justify-center w-max rounded-lg">
+                <button className=" hover:bg-customColor1-0  bg-customColor-2 font-semibold text-white text-[17px] mt-3 px-2 py-[10px] flex justify-center w-max rounded-lg">
                   Explore Cources
                   <FaArrowRightLong className=" flex mt-[7px] ml-2 " />
                 </button>
@@ -37,7 +38,7 @@ const Home = () => {
               <img src={lamp} alt="lamp" className="h-svh" />
             </div>
           </div>
-          <div className="block text-center font-Garamond text-36 font-semibold">
+          <div className="block text-center  text-36 font-semibold">
             <p>
               Tired of juggling scattered online
               <br />
@@ -48,7 +49,7 @@ const Home = () => {
         <div className="flex justify-around m-10 ">
           <div className="bg-cardBackground-0 shadow-custom-green  flex-col flex items-center gap-4 p-7 w-64  ">
             <img src={card1} alt="image" className="w-20" />
-            <p className="text-28 font-Garamond text-center">
+            <p className="text-28  text-center">
               Explore our curated <br />
               courses across <br />
               various <br />
@@ -57,7 +58,7 @@ const Home = () => {
           </div>
           <div className="bg-cardBackground-0 shadow-custom-green  flex-col flex items-center gap-4 p-7 w-64">
             <img src={card2} alt="image" className="w-20" />
-            <p className="text-28 font-Garamond text-center">
+            <p className="text-28  text-center">
               Dive into focused <br />
               learning with our <br />
               expertly designed
@@ -67,7 +68,7 @@ const Home = () => {
           </div>
           <div className="bg-cardBackground-0 shadow-custom-green  flex-col flex items-center gap-4 p-7 w-64 ">
             <img src={card3} alt="image" className="w-20" />
-            <p className="text-28 font-Garamond text-center">
+            <p className="text-28  text-center">
               Enhance your
               <br /> learning with our
               <br /> comprehensive <br />
@@ -76,7 +77,7 @@ const Home = () => {
           </div>
         </div>
         <div className=" flex ml-52 mb-10">
-          <div className="font-Garamond text-48 m-24">
+          <div className=" text-48 m-24">
             <h1 className="text-black pl-11"> Partner </h1>
             <span className="text-customColor-3 block ">Universities</span>
           </div>
@@ -85,25 +86,25 @@ const Home = () => {
             <div className=" flex flex-col gap-6 m-1">
               <div className="flex items-center">
                 <div className="border-y-2 border-gray-300 w-32"></div>
-                <span className="  font-Garamond text-30">
+                <span className="   text-30">
                   Unity University
                 </span>
               </div>
               <div className="flex items-center">
                 <div className="border-y-2 border-gray-300 w-56"></div>
-                <span className=" font-Garamond text-30">
+                <span className="  text-30">
                   St.Mary University
                 </span>
               </div>
               <div className="flex items-center">
                 <div className="border-y-2 border-gray-300 w-72"></div>
-                <span className=" font-Garamond text-30">
+                <span className="  text-30">
                   Riftvalley University
                 </span>
               </div>
               <div className="flex items-center">
                 <div className="border-y-2 border-gray-300 w-28"></div>
-                <span className=" font-Garamond text-30">Admas University</span>
+                <span className="  text-30">Admas University</span>
               </div>
             </div>
           </div>
