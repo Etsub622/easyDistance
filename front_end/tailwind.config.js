@@ -8,7 +8,9 @@ export default {
      fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
       epilogue: ['Epilogue'],
-      langar:['Langar']
+      garamond:['Garamond'],
+      langar:['Langar'],
+      Arial:['Arial']
       },
       fontSize: {
         '48': '48px',
@@ -24,6 +26,7 @@ export default {
         customColor1: ['#26705D', '#0ACF83', '#DAF3ED', '#02241C'],
         cardBackground: ['#F5F8F7','#662D00'],
         
+
       },
        boxShadow: {
         'custom-light': '0 2px 4px rgba(0, 0, 0, 0.1)',

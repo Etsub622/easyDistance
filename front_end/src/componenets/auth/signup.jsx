@@ -49,70 +49,75 @@ const Signup = () => {
     };
 
     return (
-        <div className=" flex flex-col justify-end items-center m-9">
-            <div>
-            <div className=" flex justify-center gap-4 mb-6">
-                    <img src={hat} alt="graduate hat " className="w-20 -rotate-45" />
-                <p className="font-poppins text-36 font-black pt-3"> sign up Today!</p>
+        
+            <div className="flex flex-col  justify-center w-screen items-center">
+            <div className=" flex justify-center gap-4 ">
+                    <img src={hat} alt="graduate hat " className="w-16 -rotate-45" />
+                <p className="font-poppins text-30 font-semibold pt-3"> Join Us Today!</p>
                 </div>
-                <div className=" flex justify-center gap-2 w-96 p-2 pl-2 border rounded-lg focus:outline-none focus:border-gray-500 mb-5">
+                <div className=" flex justify-center gap-2 py-2 w-[31%] border rounded-lg focus:outline-none focus:border-gray-500 mb-3">
                     <img src={pic} alt="google logo " className="w-6"  />
-                    <p className="text-customColor-2 font-bold font-epilogue"> Sign Up with Google </p>
+                    <p className="text-customColor-2 font-bold "> Sign up with Google </p>
                 </div>
-                <div className="flex items-center w-full mb-4">
+                <div className="flex items-center w-[31%] mb-2">
                   <div className="flex-grow border-t border-gray-300"></div>
-                   <span className="px-4 text-gray-700">Or Sign Up with Email</span>
+                   <span className="px-4 text-gray-700">or</span>
                   <div className="flex-grow border-t border-gray-300"></div>
                   </div>
 
-                <div className="">
-                      <div> 
-                        <label className="block font-epilogue text-customColor-1 font-medium
+                <div className="w-[31%]">
+                    <div className="flex w-full gap-3">
+                    <div className="w-full"> 
+                        <label className="block  text-customColor-1 text-[11pt] font-medium
                           ">First Name</label>
                         <input
-                            className=" w-96 p-2 pl-2 border rounded-lg focus:outline-none focus:border-gray-500 mb-3"
+                            className=" w-[11rem] p-2 pl-2 placeholder:text-[11pt] border rounded-lg focus:outline-none focus:border-gray-500 mb-3"
                             type="text"
                             placeholder="Enter your first name"
                             value={firstname}
                             onChange={(e) => setFirstname(e.target.value)}
                         />
                     </div>
-                      <div> 
-                        <label className="block font-epilogue  text-customColor-1 font-medium">Last Name</label>
+                    <div className="w-full" > 
+                        <label className="block   text-customColor-1  text-[11pt] font-medium">Last Name</label>
                         <input
-                            className=" w-96 p-2 pl-2 border rounded-lg focus:outline-none focus:border-gray-500 mb-3"
+                            className="  p-2 pl-2 placeholder:text-[11pt] border rounded-lg focus:outline-none focus:border-gray-500 mb-3"
                             type="text"
                             placeholder="Enter your last name"
                             value={lastname}
                             onChange={(e) => setLastname(e.target.value)}
                         />
                     </div>
-                    <div> 
-                        <label className="block font-epilogue  text-customColor-1 font-medium">Email Address</label>
+                    </div>
+                    
+                
+                    <div className="w-full"> 
+                        <label className="block   text-customColor-1  text-[11pt] font-medium">Email Address</label>
                         <input
-                            className=" w-96 p-2 pl-2 border rounded-lg focus:outline-none focus:border-gray-500"
+                            className=" placeholder:text-[11pt] w-full  p-2 pl-2 border rounded-lg focus:outline-none focus:border-gray-500"
                             type="text"
                             placeholder="Enter email address"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
-                      <div> 
-                        <label className="block font-epilogue  text-customColor-1 font-medium">College</label>
+                      <div className="w-full"> 
+                        <label className="block   text-[11pt]  text-customColor-1 font-medium mt-3">College</label>
                         <input
-                            className=" w-96 p-2 pl-2 border rounded-lg focus:outline-none focus:border-gray-500 mb-3 "
+                            className=" w-full placeholder:text-[11pt] p-2 pl-2 border rounded-lg focus:outline-none focus:border-gray-500 mb-3 "
                             type="text"
                             placeholder="Enter your college name"
                             value={collegename}
                             onChange={(e) => setCollegname(e.target.value)}
                         />
                     </div>
-                     <div >
-                        <label className="block font-epilogue  text-customColor-1 font-medium">Password</label>
+                     <div className="w-full">
+                        <label className="block   text-[11pt] text-customColor-1 font-medium">Password</label>
                         <div  className="relative">
                         <input
-                            className="p-2 pl-2 border rounded-lg w-96 mb-3" 
+                            className="p-2 w-full placeholder:text-[11pt] pl-2 border rounded-lg mb-3" 
                             type={showPassword ? "text":"password"}
+                            
                             placeholder="Enter password"
                             value={password}
                              onChange={(e) => setPassword(e.target.value)}
@@ -126,11 +131,11 @@ const Signup = () => {
                             </button>
                             </div>
                     </div>
-                     <div >
-                        <label className="block font-epilogue  text-customColor-1 font-medium "> Confirm Password</label>
+                     <div className="w-full" >
+                        <label className="block   text-[11pt]  text-customColor-1 font-medium "> Confirm Password</label>
                         <div  className="relative">
                         <input
-                            className="p-2 pl-2 border rounded-lg w-96"
+                            className="p-2 w-full pl-2 border rounded-lg w-96"
                             type={showPassword ? "text":"password"}
                             placeholder="Enter password"
                             value={confirmedpassword}
@@ -152,7 +157,7 @@ const Signup = () => {
                         
                     </div>
                         <div className="flex justify-center mt-5"> 
-                        <button className="bg-customColor-0 w-96 p-2 pl-2 border  rounded-lg text-white text-28"
+                        <button className="bg-customColor-0 w-full py-1  border  rounded-lg text-white text-28"
                         onClick={handleSignup}>
                         Continue
                     </button>
@@ -165,7 +170,6 @@ const Signup = () => {
 
                 </div>
                 </div>
-        </div>
        
     );
 }

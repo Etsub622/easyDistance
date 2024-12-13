@@ -1,6 +1,5 @@
-import React from 'react'
 import SideNav from '../componenets/common_com/side-nav'
-import Header from '../componenets/common_com/head-nav'
+import Header from '../componenets/common_com/Homeheader'
 import DepCards from '../componenets/module-comp/dep-cards'
 import DepData from '../componenets/module-comp/department-data'
 

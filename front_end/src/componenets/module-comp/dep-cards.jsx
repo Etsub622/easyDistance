@@ -1,4 +1,4 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
 
 const DepCards = ({index , title, detail , year }) => {
   const bgColor = index % 2 === 0 ? 'bg-[#2B634D]' : 'bg-[#B3F5E4]';
