@@ -21,7 +21,9 @@ const Uniheader = () => {
                     <Link to ="/about"> Announcements</Link>
                     <div className=" flex justify-between gap-8" >
                             <Link className="bg-customColor-0 text-white h-7  w-16 rounded-lg flex justify-center ml-6" to="/logout"> Logout </Link>
-                            <IoPersonSharp className=" text-30" />
+                                <Link to ="/profile">
+                                    <IoPersonSharp className=" text-30" />
+                                </Link> 
                     </div>
                 </div>
             </div>

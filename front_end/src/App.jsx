@@ -10,6 +10,7 @@ import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx';
 import Module from './pages/module.jsx'
 import Landingpage from './componenets/university/landingpage.jsx';
+import Profile from './pages/profile.jsx';
 import DepCards from './componenets/module-comp/dep-cards.jsx';
 import ResBox from './componenets/resources-comp/res-box.jsx';
 
@@ -33,7 +34,9 @@ function App() {
           <Route path ="/college" element ={<Landingpage/>}/>
           <Route path ="/contact" element ={<Contact/>}/>
           <Route path ="/about" element ={<About/>}/>
-          <Route path = "/module" element = {<Module />} />
+          <Route path="/module" element={<Module />} />
+          <Route path="/profile" element={ <Profile/>} />
+          
           {/* <Route path='/resources' element = {<Resources />} /> */}
         </Routes>
       </Router>
